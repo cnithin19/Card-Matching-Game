@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Match Game</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+    <style>
+        body{background-color: antiquewhite;}
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            background-color: rgb(134, 171, 171);
+           
+        }
+        .card:hover{
+                cursor: pointer;
+            }
+        .game-board{
+            width: 100%;
+            
+            justify-items: center;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .flipped{
+            background-color: #b4d060;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>Card Matching Game </h1> 
+    <h1 id="count">Check Count : 0</h1>
+    <div class="game-board"></div><br>
+
+    <script src="script.js"></script>
+</body>
+</html>
